@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import SignatureBuilder from './components/SignatureBuilder'
 import reportWebVitals from './reportWebVitals';
+import GlobalStyle from './components/GlobalStyle'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <GlobalStyle />
+    <SignatureBuilder />
   </React.StrictMode>,
   document.getElementById('root')
 );
