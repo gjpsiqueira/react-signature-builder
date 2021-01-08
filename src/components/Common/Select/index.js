@@ -1,11 +1,11 @@
 import React from 'react'
 import * as S from './styled'
 
-const Select = ({ children }) => {
+const Select = ({ onChange, children }) => {
 
     return (
         <S.Container>
-            <S.Select>
+            <S.Select onChange={onChange}>
                 { children }
             </S.Select>
         </S.Container>
