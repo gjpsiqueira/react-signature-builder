@@ -5,10 +5,11 @@ export const InputContext = createContext()
 export const InputProvider = ({ children }) => {
 
     const [state, setState] = useState({
-        name: '',
+        nome: '',
         email: '',
         telefone: '',
-        setor: ''
+        setor: '',
+        unidade: 0,
     })
 
     const onUpdate = (e) => {
