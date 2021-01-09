@@ -1,7 +1,9 @@
 import React from 'react'
 import { InputText, Select, PrimaryButton, SecondaryButton } from '../Common'
 import { useInputValue } from '../Contexts/InputContext'
+import CopyToClipboard from '../Common/CopyToClipboard'
 import * as S from './styled'
+
 
 const unidades = [
     { label:'Barbacena' },
@@ -33,7 +35,9 @@ const Sidebar = () => {
                     ))}
                 </Select>
                 <div style={{marginTop:'80px'}} />
-                <PrimaryButton>salvar assinatura</PrimaryButton>
+                <PrimaryButton onClick={() => CopyToClipboard('signatureMarkup')}>
+                    salvar assinatura
+                </PrimaryButton>
                 <SecondaryButton>orientações</SecondaryButton>
             </S.ContainerForm>
         </S.Wrapper>

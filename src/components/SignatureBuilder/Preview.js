@@ -8,7 +8,7 @@ const Preview = () => {
 
     return (
         <Fragment>
-          <StyledPreview><Template2 /></StyledPreview>
+          <StyledPreview id="signatureMarkup"><Template2 /></StyledPreview>
         </Fragment>
     )
 }
